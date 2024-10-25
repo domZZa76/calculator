@@ -1,5 +1,7 @@
-* {
-    boder: 1px solid red;
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .calculator {
@@ -7,6 +9,7 @@
     width: 350px;
     height: 500px;
     background-color: gray;
+    border-radius: 20px;
 }
 
 .big-screen {
@@ -21,6 +24,15 @@
     border: 3px solid black;
     width: 90%;
     height: 80%;
+    font-size: 40px;
+    border-radius: 20px;
+    position: relative;
+}
+
+.bottom-right {
+    position: absolute;
+    right: 13px;
+    bottom: 8px;
 }
 
 .keyboard {
@@ -52,5 +64,5 @@ button {
     font-size: 40px;
     background-color: lightgrey;
     border: 3px solid black;
-
+    border-radius: 10px;
 }
