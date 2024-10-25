@@ -5,7 +5,7 @@ let operator = 0;
 
 //FUNCTIONS FOR BASIC MATH OPERATORS
 function adding(a, b) {
-    screen.textContent = parseInt(a) + parseInt(b)
+    screen.textContent = parseInt(a) + parseInt(b) 
 }
 
 function subtracting(a, b) {
@@ -17,7 +17,13 @@ function multiplying(a, b) {
 }
 
 function dividing(a, b) {
-    screen.textContent = parseInt(a) / parseInt(b)
+
+    if ((a % b) == 0 ) {
+        screen.textContent = parseInt(a) / parseInt(b)
+    } else {
+        screen.textContent =  (parseInt(a) / parseInt(b)).toPrecision(13)
+    }
+    //screen.textContent =  (parseInt(a) / parseInt(b)).toPrecision(13)
 }
 
 //OPERATE FUNCTION
